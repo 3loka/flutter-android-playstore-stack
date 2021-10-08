@@ -44,22 +44,22 @@ inputs:
     description: Base64 encoded Android Keystore for signing
     default: 'test'
     required: true
-    is_secret: true
+    is-secret: true
 
   - name: ANDROID_PACKAGE_NAME
     description: Android Package name
     default: 'test'
     required: true
-    is_secret: true
+    is-secret: true
 
   - name: GOOGLE_SERVICE_ACCOUNT_KEY
     description: Google Service Account Key
     default: 'test'
     required: true
-    is_secret: true
+    is-secret: true
 
 configs:
-  - repo-metadata:
+  repo-metadata:
       parameters:
         description: 'Flutter deployed to play store'
         secrets: 
@@ -73,14 +73,14 @@ configs:
           - flutter
           - android
 
-  - branches:
+  branches:
     - name: main
 
-  - environments:
+  environments:
     - name: development
 
 github-apps:
 - slug: codecov
 
 init:
-  - uses: ".github/workflows/stack-init.yaml"
+  uses: ".github/workflows/stack-init.yaml"
