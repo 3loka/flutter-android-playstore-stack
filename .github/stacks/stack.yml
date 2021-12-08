@@ -1,4 +1,4 @@
-version: 1.0
+version: 0.1.0
 
 name: Stack to setup a Flutter app optionally deploy to Google Play store
 description: Use this stack to setup an Android App and deploy to google play store
@@ -83,4 +83,4 @@ configs:
 # - slug: codecov
 
 init:
-  uses: ".github/workflows/stack-init.yaml"
+  uses: "stack-init.yaml"
